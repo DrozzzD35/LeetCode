@@ -1,9 +1,8 @@
 package repeat.Task_09_12_2025;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Main {
+public class Task1 {
     public static void main(String[] args) {
         int[] arr = {1, 2};
         System.out.println(solution(arr));
