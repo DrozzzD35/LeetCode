@@ -3,7 +3,7 @@ package leetCode.Task_10_12_2025.Task3;
 public class Main {
 
     public static void main(String[] args) {
-        String s = "";
+        String s = "abcg";
         String t = "ahbgdc";
 
         System.out.println(solution(s, t));
@@ -17,17 +17,13 @@ public class Main {
 
         while (i < t.length() && j < s.length()) {
             if (t.charAt(i) == s.charAt(j)) {
-                if (j == s.length() - 1) {
-                    return true;
-                } else {
-                    i++;
-                    j++;
-                }
-            } else {
-                i++;
+                j++;
             }
+            i++;
         }
 
-        return false;
+        return j == s.length();
     }
+
 }
+
