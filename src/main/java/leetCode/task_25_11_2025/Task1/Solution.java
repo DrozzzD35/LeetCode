@@ -1,4 +1,4 @@
-package leetCode.Task_25_11_2025.Task1;
+package leetCode.task_25_11_2025.Task1;
 
 import java.util.ArrayList;
 import java.util.List;

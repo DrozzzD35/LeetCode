@@ -1,4 +1,4 @@
-package leetCode.Task_31_10_2025.Task1;
+package leetCode.task_31_10_2025.Task1;
 
 import java.util.ArrayList;
 import java.util.HashMap;
