@@ -10,21 +10,24 @@ public class Main {
             return head;
         }
 
-        ListNode current = head;
-        ListNode tail;
-        ListNode prev;
+        ListNode first;
+        ListNode second;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+        ListNode point = dummy;
 
-        while (current.next != null) {
+        while (point.next != null && point.next.next != null) {
+            first = point.next;
+            second = point.next.next;
 
-            tail = current.next.next;
-            prev = current;
-            current = current.next;
-            current.next = prev;
-            prev.next = tail;
+            first.next = second.next;
+            second.next = first;
+            point.next = second;
 
+            point = first;
         }
 
-        return head;
+        return dummy.next;
 
 
     }
